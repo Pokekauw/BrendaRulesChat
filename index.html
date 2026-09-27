@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>👑 Mistress Brenda — The Rules Before You Speak 🖤</title>
+<meta name="description" content="Goddess Brenda — Online Chat Domination only. Read the rules. Obey the rules. Then you may speak." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#050406;
+    --coal:#0b0a0d;
+    --panel:#111013;
+    --gold:#d4af37;
+    --gold-soft:#f3e3a3;
+    --rose:#ff2d6f;
+    --rose-soft:#ff8fb4;
+    --line:rgba(212,175,55,.22);
+    --txt:#e9e4e6;
+    --muted:#a9a1a6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--black);
+    color:var(--txt);
+    font-family:'Inter',system-ui,sans-serif;
+    font-weight:300;
+    line-height:1.75;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  body::before{
+    content:"";
+    position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(900px 500px at 15% -5%, rgba(255,45,111,.16), transparent 60%),
+      radial-gradient(800px 600px at 90% 10%, rgba(212,175,55,.12), transparent 60%),
+      radial-gradient(1000px 700px at 50% 110%, rgba(255,45,111,.10), transparent 60%);
+  }
+  body::after{
+    content:"";
+    position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.35;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+  }
+  main,header,nav,footer,section{position:relative;z-index:1}
+  ::selection{background:var(--rose);color:#fff}
+
+  .display{font-family:'Cinzel',serif;letter-spacing:.06em;line-height:1.1}
+  .serif{font-family:'Cormorant Garamond',serif}
+  .gold-text{
+    background:linear-gradient(120deg,#8a6d1f 0%,#d4af37 25%,#fff4c9 45%,#d4af37 65%,#8a6d1f 100%);
+    background-size:200% auto;
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    animation:shimmer 7s linear infinite;
+  }
+  .rose-text{color:var(--rose);text-shadow:0 0 22px rgba(255,45,111,.55)}
+  @keyframes shimmer{to{background-position:200% center}}
+
+  #progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:60;
+    background:linear-gradient(90deg,var(--rose),var(--gold));box-shadow:0 0 14px rgba(212,175,55,.8)}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);
+    background:rgba(5,4,6,.72);border-bottom:1px solid var(--line);transition:.4s}
+  .nav-inner{max-width:1180px;margin:0 auto;padding:.7rem 1.1rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+  .brand{font-family:'Cinzel',serif;font-weight:700;font-size:.82rem;letter-spacing:.24em;text-transform:uppercase;white-space:nowrap}
+  .nav-links{display:none;gap:1.35rem;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  .nav-links a{color:inherit;text-decoration:none;transition:.25s;position:relative}
+  .nav-links a:hover{color:var(--gold-soft)}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:1px;width:0;background:var(--gold);transition:.3s}
+  .nav-links a:hover::after{width:100%}
+  @media(min-width:980px){.nav-links{display:flex}}
+
+  .wrap{max-width:1060px;margin:0 auto;padding:0 1.2rem}
+  section{padding:5rem 0}
+  @media(min-width:768px){section{padding:7rem 0}}
+
+  .eyebrow{font-size:.66rem;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);opacity:.85;margin-bottom:1rem}
+  .sec-title{font-family:'Cinzel',serif;font-size:clamp(1.7rem,5vw,2.9rem);font-weight:700;margin:0 0 .6rem}
+  .sec-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(1.05rem,2.4vw,1.35rem);font-style:italic;color:var(--muted);max-width:640px}
+
+  .divider{display:flex;align-items:center;justify-content:center;gap:1rem;margin:2.6rem 0}
+  .divider span{height:1px;width:min(120px,22vw);background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+  .divider b{color:var(--gold);font-size:1rem;letter-spacing:.3em}
+
+  .card{
+    background:linear-gradient(160deg,rgba(255,255,255,.045),rgba(255,255,255,.012));
+    border:1px solid var(--line);border-radius:14px;padding:1.5rem 1.4rem;position:relative;overflow:hidden;
+    transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s,box-shadow .35s;
+  }
+  .card:hover{transform:translateY(-6px);border-color:rgba(212,175,55,.55);box-shadow:0 22px 50px -24px rgba(212,175,55,.45)}
+  .card .num{
+    font-family:'Cinzel',serif;font-size:2.6rem;font-weight:900;line-height:1;
+    color:transparent;-webkit-text-stroke:1px rgba(212,175,55,.55);position:absolute;top:.6rem;right:1rem;opacity:.5
+  }
+  .card h3{font-family:'Cinzel',serif;font-size:.95rem;letter-spacing:.1em;margin:.2rem 0 .5rem;color:var(--gold-soft);padding-right:2.4rem}
+  .card p{margin:0;font-size:.94rem;color:var(--muted)}
+  .grid{display:grid;gap:1rem}
+  @media(min-width:700px){.grid-2{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:900px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+
+  /* WHO I AM */
+  .who{
+    max-width:740px;margin:0 auto;text-align:center;
+    padding:2.4rem 1.6rem;
+    border-radius:20px;
+    background:linear-gradient(180deg, rgba(255,45,111,.07), rgba(212,175,55,.04) 55%, transparent);
+    border:1px solid rgba(255,45,111,.18);
+    box-shadow:inset 0 1px 0 rgba(255,244,201,.08);
+  }
+  @media(min-width:768px){.who{padding:3rem 2.8rem}}
+  .who h2{font-family:'Cinzel',serif;font-size:clamp(1.5rem,4.4vw,2.3rem);margin:.4rem 0 1.1rem}
+  .who .lead{
+    font-family:'Cormorant Garamond',serif;font-style:italic;
+    font-size:clamp(1.2rem,2.8vw,1.5rem);color:var(--gold-soft);line-height:1.55;margin:0 0 1.4rem;
+  }
+  .who p{margin:0 auto 1rem;max-width:620px;color:var(--muted);font-size:1.05rem}
+  .who .trade{
+    display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem .7rem;margin:1.4rem 0 1.6rem;
+  }
+  .who .trade span{
+    border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;
+    font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-soft);
+    background:rgba(212,175,55,.06);
+  }
+  .who .close{
+    margin:1.6rem 0 0;padding-top:1.4rem;border-top:1px solid var(--line);
+    font-family:'Cinzel',serif;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+    color:#ff96b8;line-height:1.8;
+  }
+
+  /* THE FIRST LAW */
+  .first-law{
+    position:relative;overflow:hidden;border-radius:20px;padding:2.1rem 1.5rem 2rem;
+    background:
+      linear-gradient(165deg, rgba(212,175,55,.20), rgba(5,4,6,.55) 42%, rgba(255,45,111,.08)),
+      radial-gradient(700px 240px at 100% 0%, rgba(212,175,55,.14), transparent);
+    border:1px solid rgba(212,175,55,.55);
+    box-shadow:0 0 0 1px rgba(212,175,55,.12), 0 40px 90px -42px rgba(212,175,55,.7), inset 0 1px 0 rgba(255,244,201,.16);
+  }
+  @media(min-width:768px){.first-law{padding:2.6rem 2.4rem 2.4rem}}
+  .first-law::before{
+    content:"01";position:absolute;right:.2rem;top:-.5rem;
+    font-family:'Cinzel',serif;font-weight:900;font-size:clamp(5.5rem,16vw,9.5rem);line-height:.85;
+    color:transparent;-webkit-text-stroke:1px rgba(212,175,55,.22);pointer-events:none;
+  }
+  .first-law .badge{
+    display:inline-flex;align-items:center;gap:.55rem;
+    border:1px solid rgba(212,175,55,.45);background:rgba(212,175,55,.1);
+    color:var(--gold-soft);font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.28em;
+    text-transform:uppercase;padding:.38rem .9rem;border-radius:999px;margin-bottom:1.1rem;
+  }
+  .first-law h2{font-family:'Cinzel',serif;font-size:clamp(1.7rem,5vw,2.7rem);margin:0 0 .8rem;position:relative}
+  .first-law p{margin:0;max-width:720px;font-size:1.05rem;color:#e8dcc0;position:relative}
+  .first-law .punch{margin-top:1.1rem;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.25rem;color:var(--gold-soft)}
+
+  .warning{
+    border-left:3px solid var(--rose);
+    background:linear-gradient(100deg,rgba(255,45,111,.14),rgba(255,45,111,.03));
+    border-radius:0 14px 14px 0;padding:1.3rem 1.4rem;margin:1rem 0;
+    box-shadow:inset 0 0 40px rgba(255,45,111,.06);
+  }
+  .warning h4{margin:0 0 .45rem;font-family:'Cinzel',serif;font-size:.9rem;letter-spacing:.12em;color:#ff96b8;text-transform:uppercase}
+  .warning p{margin:0;color:#f0d8e0;font-size:.94rem}
+  .warning.gold{border-left-color:var(--gold);background:linear-gradient(100deg,rgba(212,175,55,.13),rgba(212,175,55,.02));box-shadow:inset 0 0 40px rgba(212,175,55,.05)}
+  .warning.gold h4{color:var(--gold-soft)}
+  .warning.gold p{color:#e8dcc0}
+
+  .banned{
+    border:1px solid rgba(255,45,111,.35);border-radius:14px;padding:1.3rem;background:rgba(255,45,111,.05);
+    transition:.35s;
+  }
+  .banned:hover{background:rgba(255,45,111,.1);transform:translateY(-4px)}
+  .banned .icon{font-size:1.9rem;display:block;margin-bottom:.5rem}
+  .banned h4{font-family:'Cinzel',serif;color:#ff9bbb;margin:0 0 .35rem;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase}
+  .banned p{margin:0;font-size:.9rem;color:#dcc4cd}
+
+  .bubble{border-radius:16px;padding:.7rem 1rem;font-size:.9rem;margin:.45rem 0;max-width:92%;line-height:1.5}
+  .good{background:linear-gradient(120deg,rgba(212,175,55,.18),rgba(212,175,55,.06));border:1px solid rgba(212,175,55,.35);color:#f6ecd0}
+  .bad{background:rgba(255,45,111,.1);border:1px solid rgba(255,45,111,.3);color:#f6d5e0;max-width:70%}
+  .tag-ok{color:#8ce0a8;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase}
+  .tag-no{color:#ff6f96;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+    font-family:'Cinzel',serif;font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:.76rem;
+    padding:1rem 2rem;border-radius:999px;border:1px solid var(--gold);color:#120e03;cursor:pointer;
+    background:linear-gradient(120deg,#b38f22,#f0d87e,#b38f22);background-size:200% auto;
+    transition:.4s;text-decoration:none;
+  }
+  .btn:hover{background-position:right center;box-shadow:0 0 34px rgba(212,175,55,.5);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--gold-soft);border:1px solid var(--line)}
+  .btn-ghost:hover{border-color:var(--gold);color:#fff;background:rgba(212,175,55,.08);box-shadow:none}
+  .btn:disabled{opacity:.3;cursor:not-allowed;filter:grayscale(.7);transform:none;box-shadow:none}
+
+  .vow-box{
+    border:1px solid var(--line);border-radius:20px;padding:1.8rem 1.3rem;
+    background:linear-gradient(170deg,rgba(212,175,55,.08),rgba(5,4,6,.6));
+    box-shadow:0 40px 90px -50px rgba(212,175,55,.5);
+  }
+  @media(min-width:768px){.vow-box{padding:2.6rem}}
+  .check{display:flex;gap:.85rem;align-items:flex-start;padding:.7rem .85rem;border-radius:10px;cursor:pointer;transition:.25s;border:1px solid transparent}
+  .check:hover{background:rgba(255,255,255,.035);border-color:var(--line)}
+  .check input{appearance:none;min-width:20px;height:20px;border:1px solid var(--gold);border-radius:5px;margin-top:.22rem;cursor:pointer;position:relative;transition:.25s;background:transparent;flex-shrink:0}
+  .check input:checked{background:linear-gradient(120deg,#b38f22,#f0d87e)}
+  .check input:checked::after{content:"✔";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#120e03;font-size:.78rem;font-weight:700}
+  .check span{font-size:.9rem;color:var(--muted)}
+  .check input:checked + span{color:var(--gold-soft)}
+  .check.priority{border:1px solid rgba(212,175,55,.35);background:rgba(212,175,55,.06);margin-bottom:.4rem}
+
+  input.vow-input{
+    width:100%;padding:1rem 1.1rem;border-radius:12px;background:rgba(0,0,0,.55);
+    border:1px solid var(--line);color:var(--gold-soft);font-family:'Cinzel',serif;letter-spacing:.08em;
+    font-size:.85rem;text-align:center;outline:none;transition:.3s;
+  }
+  input.vow-input:focus{border-color:var(--gold);box-shadow:0 0 26px rgba(212,175,55,.28)}
+  input.vow-input.ok{border-color:#4ade80;color:#b8f4cd;box-shadow:0 0 26px rgba(74,222,128,.25)}
+  input.vow-input.err{border-color:var(--rose);animation:shake .4s}
+  @keyframes shake{25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+
+  .vow-line{
+    font-family:'Cinzel',serif;font-weight:700;font-size:clamp(.95rem,3.4vw,1.5rem);text-align:center;
+    padding:1.1rem;border:1px dashed rgba(212,175,55,.45);border-radius:12px;background:rgba(0,0,0,.4);
+    cursor:copy;transition:.3s;word-break:break-word;user-select:all;
+  }
+  .vow-line:hover{background:rgba(212,175,55,.08);border-style:solid}
+
+  #vowPop{
+    position:fixed;inset:0;z-index:110;
+    background:rgba(5,4,6,.94);
+    display:none;align-items:center;justify-content:center;
+    padding:1.1rem;backdrop-filter:blur(16px);
+  }
+  #vowPop.open{display:flex}
+  #vowPop .panel{
+    width:min(680px,100%);max-height:94vh;overflow:auto;
+    background:linear-gradient(170deg,rgba(212,175,55,.14),rgba(8,6,10,.97));
+    border:1px solid rgba(212,175,55,.5);border-radius:22px;padding:2rem 1.3rem 1.6rem;
+    text-align:center;box-shadow:0 40px 100px rgba(0,0,0,.7), 0 0 60px rgba(212,175,55,.12);
+  }
+  @media(min-width:640px){#vowPop .panel{padding:2.6rem 2.2rem 2rem}}
+  .vow-giant{
+    font-family:'Cinzel',serif;font-weight:700;line-height:1.45;
+    font-size:clamp(1.35rem,5.4vw,2.15rem);
+    padding:1.35rem 1rem;margin:1.1rem 0 1.2rem;
+    border:1px solid rgba(212,175,55,.45);border-radius:14px;
+    background:rgba(0,0,0,.45);user-select:all;cursor:text;
+    word-break:break-word;
+  }
+  .read-this{font-size:1.12rem;color:#e8dcc0;margin:.4rem 0 0;line-height:1.65}
+  .read-this b{color:#fff}
+
+  .pill{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--line);border-radius:999px;padding:.4rem .95rem;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);background:rgba(212,175,55,.06)}
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  .float{animation:float 6s ease-in-out infinite}
+  @keyframes float{50%{transform:translateY(-12px)}}
+  .pulse-ring{animation:pulsering 2.6s ease-out infinite}
+  @keyframes pulsering{0%{box-shadow:0 0 0 0 rgba(255,45,111,.45)}70%{box-shadow:0 0 0 24px rgba(255,45,111,0)}100%{box-shadow:0 0 0 0 rgba(255,45,111,0)}}
+  .love-list li{margin-bottom:.9rem;padding-left:1.8rem;position:relative;color:var(--muted);font-size:.96rem}
+  .love-list li::before{content:"👑";position:absolute;left:0;top:0}
+  footer{border-top:1px solid var(--line);padding:3rem 0;text-align:center;color:#6f676c;font-size:.75rem;letter-spacing:.12em}
+  .stats{
+    margin-top:1.5rem;display:flex;justify-content:center;align-items:center;gap:.9rem;flex-wrap:wrap;
+    font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:#4e484c;
+  }
+  .stats b{font-family:'Cinzel',serif;color:rgba(212,175,55,.5);font-weight:600;letter-spacing:.14em}
+  .stats i{font-style:normal;opacity:.75}
+  .toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,140%);background:linear-gradient(120deg,#b38f22,#f0d87e);color:#120e03;
+    font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;padding:.8rem 1.4rem;border-radius:999px;z-index:80;transition:.5s cubic-bezier(.2,.8,.2,1);box-shadow:0 20px 40px -18px rgba(212,175,55,.8)}
+  .toast.show{transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<nav>
+  <div class="nav-inner">
+    <div class="brand gold-text">👑 Mistress Brenda</div>
+    <div class="nav-links">
+      <a href="#who">Who I Am</a>
+      <a href="#firstlaw">First Law</a>
+      <a href="#rules">Core Rules</a>
+      <a href="#bitchboy">BitchBoy</a>
+      <a href="#strict">Strict Rules</a>
+      <a href="#loves">Pleases Me</a>
+      <a href="#limits">Hard Limits</a>
+      <a href="#vow">The Vow</a>
+    </div>
+    <a href="#vow" class="btn" style="padding:.65rem 1.2rem;font-size:.66rem">Submit 🖤</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header style="min-height:100svh;display:flex;align-items:center;padding:7rem 0 4rem">
+  <div class="wrap" style="text-align:center">
+    <div class="pill float" style="margin-bottom:2rem">✨ Online Chat Domination Only ✨</div>
+
+    <p class="serif" style="font-style:italic;color:var(--muted);font-size:clamp(1rem,2.6vw,1.3rem);margin:0 0 .6rem">
+      Kneel. Read every word. Then decide if you are worthy.
+    </p>
+
+    <h1 class="display" style="font-size:clamp(2.2rem,9vw,5.4rem);margin:.4rem 0 .2rem">
+      <span class="gold-text">MISTRESS BRENDA</span>
+    </h1>
+    <h2 class="display" style="font-size:clamp(1rem,3.6vw,1.8rem);font-weight:400;color:var(--muted);margin:0 0 2rem;letter-spacing:.32em">
+      GODDESS &nbsp;·&nbsp; OWNER &nbsp;·&nbsp; YOUR OBSESSION
+    </h2>
+
+    <div class="divider"><span></span><b>👑 🖤 👢</b><span></span></div>
+
+    <div class="warning pulse-ring" style="max-width:760px;margin:0 auto;text-align:left">
+      <h4>⚠️ Read this before you even breathe in my direction</h4>
+      <p style="font-size:1.02rem">
+        I am <strong style="color:#fff">ONLY</strong> here to find online chatting <em>"partners"</em> —
+        <strong style="color:#fff">NOT dates. NOT meetups. NOT relationships. NOT a boyfriend.</strong>
+        If you are hunting for anything more than screen-to-screen devotion,
+        close this page right now and never message me. 🚪🖤
+      </p>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center;margin-top:2.4rem">
+      <a href="#firstlaw" class="btn">👑 I Will Read The Rules</a>
+      <a href="#leave" class="btn btn-ghost">🚪 I'm Not Worthy — Exit</a>
+    </div>
+
+    <p style="margin-top:2.6rem;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:#6f676c">
+      No nudes · No feet · No demands · No free entertainment 💸
+    </p>
+  </div>
+</header>
+
+<!-- ================= WHO I AM ================= -->
+<section id="who" style="padding-top:2.5rem;padding-bottom:2.5rem">
+  <div class="wrap">
+    <div class="who reveal">
+      <div class="eyebrow">A proper introduction</div>
+      <h2 class="gold-text">I Am Mistress Brenda</h2>
+      <p class="lead">A former Dominatrix. Now a purely Online Goddess. 👑</p>
+      <p>
+        I am looking for <strong style="color:#fff">submissive men</strong> who understand the arrangement:
+        you buy me gifts — I give you my attention.
+        Not dates. Not romance. Not a woman you get to keep.
+        A Goddess you get to serve. 💅✨
+      </p>
+      <div class="trade">
+        <span>Degradation</span>
+        <span>Humiliation</span>
+        <span>Mindgames</span>
+        <span>Obsession</span>
+        <span>Gifts 💸</span>
+      </div>
+      <p>
+        My time is earned. My cruelty is a privilege.
+        If spending on a woman you will never meet does not thrill you —
+        this is not your world.
+      </p>
+      <p class="close">This is not for everyone.<br>If it is not for you, we end it here. 🌹🖤</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE FIRST LAW ================= -->
+<section id="firstlaw">
+  <div class="wrap">
+    <div class="reveal first-law">
+      <div class="badge">⚡ Rule 01 · Non-negotiable · Above all others</div>
+      <h2 class="gold-text">🌍 Keep Your Real Life</h2>
+      <p>
+        You take care of your job, your family and your duties.
+        You do <strong style="color:#fff">not</strong> fail the people around you because a woman on a screen owns your mind.
+        No pathetic excuses about not being able to juggle real life and devotion —
+        <strong style="color:#fff">grown men manage both.</strong>
+      </p>
+      <p class="punch">If you cannot hold your actual world together, you are not fit to kneel in mine. 🖤</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CORE RULES ================= -->
+<section id="rules" style="padding-top:2rem">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:3rem">
+      <div class="eyebrow">Chapter I</div>
+      <h2 class="sec-title gold-text">The Core Rules</h2>
+      <p class="sec-sub" style="margin:0 auto">
+        My name is spelled <strong style="color:var(--gold-soft)">Mistress Brenda</strong> or
+        <strong style="color:var(--gold-soft)">Goddess Brenda</strong> — correctly, every single time.
+        Misspell it and you prove you were never paying attention. 💅
+      </p>
+    </div>
+
+    <div class="grid grid-2 reveal">
+      <div class="card">
+        <div class="num">02</div>
+        <h3>👁️ Full Attention</h3>
+        <p>When you speak to me, I am your first priority. Not your second tab, not your background noise. Your eyes, your focus, your devotion — all mine.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>⚡ Fast Replies</h3>
+        <p>You answer quickly. A slow reply tells me you had something better to do. There is nothing better to do than me.</p>
+      </div>
+      <div class="card">
+        <div class="num">04</div>
+        <h3>🎩 Manners &amp; Announcements</h3>
+        <p>Good manners always. And if you must leave the chat, you tell me — politely — before you go. I <em>hate</em> writing to nothing. Ghosting me mid-sentence is the fastest route to nothing at all.</p>
+      </div>
+      <div class="card">
+        <div class="num">05</div>
+        <h3>⏳ Patience With Me</h3>
+        <p>I answer when I decide to answer. My silence is part of the game. You will wait beautifully, without whining, without pouting, without double-texting like a brat.</p>
+      </div>
+    </div>
+
+    <div class="warning reveal" style="margin-top:2rem">
+      <h4>🚫 No Nudes. Ever. Not One.</h4>
+      <p>
+        Send me a single nude or inappropriate picture and you are <strong style="color:#fff">blocked instantly</strong> — no warning, no second chance, no "sorry Mistress". This is
+        <strong style="color:#fff">purely chat, mindgames and obsession</strong>. Your body is irrelevant to me. Your mind is the toy. 😈
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BITCHBOY ================= -->
+<section id="bitchboy" style="background:linear-gradient(180deg,transparent,rgba(255,45,111,.045),transparent)">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:2.6rem">
+      <div class="eyebrow">Chapter II</div>
+      <h2 class="sec-title rose-text">The BitchBoy Chat Rules 🖤</h2>
+      <p class="sec-sub" style="margin:0 auto">Two tiny rules. Break them and I will notice immediately — I always notice.</p>
+    </div>
+
+    <div class="grid grid-2 reveal">
+      <div class="card" style="text-align:center">
+        <div style="font-size:2.6rem;margin-bottom:.4rem">❤️</div>
+        <h3 style="padding:0">1 · React To Everything</h3>
+        <p>You react with a ❤️ to <strong style="color:#fff">every single message</strong> I send, the second you have read it. That heart is your receipt. No heart = you never read it = you were ignoring your Goddess.</p>
+      </div>
+      <div class="card" style="text-align:center">
+        <div style="font-size:2.6rem;margin-bottom:.4rem">✨😈🙌</div>
+        <h3 style="padding:0">2 · Emojis Always</h3>
+        <p>Every reply carries fitting emojis. I do not accept dry, naked, grey little sentences. Give me colour, give me flair, give me effort — or give me nothing and get nothing back. 💅</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STRICT & FUN RULES ================= -->
+<section id="strict">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:3rem">
+      <div class="eyebrow">Chapter III</div>
+      <h2 class="sec-title gold-text">The Fun &amp; Strict Rules</h2>
+      <p class="sec-sub" style="margin:0 auto">This is where I separate the entertained tourists from the truly owned. 👑</p>
+    </div>
+
+    <div class="grid grid-3 reveal">
+      <div class="card"><div class="num">01</div><h3>🙏 Never Demand</h3><p>You never <em>demand</em> anything from me. You may <strong style="color:var(--gold-soft)">request</strong>, sweetly and humbly. Demands get laughed at, then deleted.</p></div>
+      <div class="card"><div class="num">02</div><h3>🫵 Accept All Blame</h3><p>If I blame you for something — fair or absolutely unfair — you accept 100% of the blame. Apologise properly. I am never wrong. That is the arrangement.</p></div>
+      <div class="card"><div class="num">03</div><h3>🔍 Full Transparency</h3><p>Full details about your daily life, schedule and whereabouts. Not because I am curious — because I plan my attention, my demands and my control around it. 📍</p></div>
+      <div class="card"><div class="num">04</div><h3>💻 100% Digital</h3><p>This is a purely digital ownership. You will <strong style="color:#fff">NEVER</strong> see me in real life. Never. Stop imagining it. The screen is the wall between us and it stays there.</p></div>
+      <div class="card"><div class="num">05</div><h3>🎁 Rewards</h3><p>Depending on your behaviour you are rewarded with pictures, videos, storytelling, humiliation and demands. Good boys are fed. Brats starve.</p></div>
+      <div class="card"><div class="num">06</div><h3>👢 No Nudity Ever</h3><p>I never show myself naked. Perhaps boots. Perhaps something a little more daring and teasing. But never nude. My mystery is the whole point. ✨</p></div>
+      <div class="card"><div class="num">07</div><h3>🖤 Soft &amp; Strict</h3><p>I am soft and tight at the same time — warm one moment, merciless the next. And you will adore me for exactly that. I am perfect. Say it back.</p></div>
+      <div class="card"><div class="num">08</div><h3>🚫 No Degrading Names</h3><p>You will never call me "bitch", "whore" or any other filthy little word to provoke a punishment out of me. That is not a kink here, that is disrespect → <strong style="color:var(--rose)">instant block</strong>.</p></div>
+    </div>
+
+    <div class="warning gold reveal" style="margin-top:2.2rem">
+      <h4>💸 I Am Not Free Entertainment</h4>
+      <p>
+        My time, my attention, my cruelty — all of it is earned, never given. You will
+        <strong style="color:#fff">spend money on me and buy me gifts</strong> in exchange for my attention.
+        The better the gifts and the deeper the devotion, the happier I am — and a happy Goddess is a very generous one. 🎁👑
+        Cheap boys who want everything for nothing are removed without discussion.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DO'S & DON'TS ================= -->
+<section id="examples" style="background:linear-gradient(180deg,transparent,rgba(212,175,55,.05),transparent)">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:3rem">
+      <div class="eyebrow">Chapter IV</div>
+      <h2 class="sec-title gold-text">Do's &amp; Don'ts</h2>
+      <p class="sec-sub" style="margin:0 auto">Study these. Copy the tone. This is how a worthy boy writes to his Goddess. 🙌🖤</p>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card reveal">
+        <div class="tag-ok">✅ Good boy · Correct tone</div>
+        <div style="margin-top:1rem">
+          <div class="bubble good">Mistress Brenda, how may I serve you? 🙌🖤</div>
+          <div class="bubble good">Slut home from work ready to obey my goddess Mistress Brenda 🙌🖤</div>
+          <div class="bubble good">Mistress Brenda thank you so much for letting me serve you, I am the luckiest slave alive 🙌🖤</div>
+        </div>
+        <p style="margin-top:1rem;font-size:.85rem">One complete, polished, respectful message. Name spelled correctly. Emojis included. Devotion obvious. ✨</p>
+      </div>
+
+      <div class="card reveal" style="border-color:rgba(255,45,111,.35)">
+        <div class="tag-no">❌ Strictly forbidden · SPAM</div>
+        <div style="margin-top:1rem">
+          <div class="bubble bad">Mistress</div>
+          <div class="bubble bad">I am</div>
+          <div class="bubble bad">home</div>
+          <div class="bubble bad">from work</div>
+          <div class="bubble bad">now 🙂</div>
+        </div>
+        <div class="warning" style="margin-top:1rem">
+          <h4>🤬 Never split one sentence into 5 messages</h4>
+          <p>Machine-gun spamming my notifications is the single fastest way to irritate me. Think first, write <strong style="color:#fff">ONE long, beautiful, complete message</strong>, then send it. Once.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HARD LIMITS ================= -->
+<section id="limits">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:3rem">
+      <div class="eyebrow">Chapter V</div>
+      <h2 class="sec-title rose-text">Hard Limits &amp; Absolute Bans 🚫</h2>
+      <p class="sec-sub" style="margin:0 auto">These are not negotiable. Not "maybe later". Not "but Mistress...". Cross one and you disappear from my world.</p>
+    </div>
+
+    <div class="grid grid-3 reveal">
+      <div class="banned">
+        <span class="icon">🦶🤢</span>
+        <h4>No Feet. At All.</h4>
+        <p>I <strong style="color:#fff">hate</strong> feet. No foot worship, no toe licking, no foot pics, no sneaky foot talk. Boots only — and boots are a privilege. 👢👅👠</p>
+      </div>
+      <div class="banned">
+        <span class="icon">💩🤢</span>
+        <h4>No Scat / Toilet Play</h4>
+        <p>Absolutely disgusting to me. Mention it and the conversation is over before it began. Zero tolerance.</p>
+      </div>
+      <div class="banned">
+        <span class="icon">🩸🔥</span>
+        <h4>No Blood, No Branding</h4>
+        <p>No cutting, no blood play, no burns, no permanent marks of any kind. I own your mind — I do not scar your body.</p>
+      </div>
+    </div>
+
+    <div class="warning gold reveal" style="margin-top:2rem">
+      <h4>🤫 Extreme Fetishes — Whisper, Never Dump</h4>
+      <p>
+        Any extreme fetish must be <strong style="color:#fff">whispered gently and prepared carefully</strong> before we ever agree on limits.
+        You do not drop it into the chat like a bucket of cold water. You ask permission to speak about it. Then you wait. 🖤
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT SHE LOVES ================= -->
+<section id="loves" style="background:linear-gradient(180deg,transparent,rgba(255,45,111,.05),transparent)">
+  <div class="wrap">
+    <div class="grid grid-2" style="align-items:center;gap:2.4rem">
+      <div class="reveal">
+        <div class="eyebrow">Chapter VI</div>
+        <h2 class="sec-title gold-text">What Pleases Me 👑</h2>
+        <p class="sec-sub" style="margin-bottom:1.6rem">A small taste of what makes me smile — and what makes me generous.</p>
+        <ul class="love-list" style="list-style:none;padding:0;margin:0">
+          <li>Compliments for my beauty, my style, my clothing, my presence. Detailed ones. Poetic ones. Desperate ones. ✨</li>
+          <li>Boot worship and boot licking — describe it for me, in detail, on your knees. 👢👅👠</li>
+          <li>Location check-ins 📍 whenever I demand them. Because knowing where you are is control, and control is delicious.</li>
+          <li>Forcing you to send silly, ridiculous pictures of yourself purely for my entertainment. 📸😂</li>
+          <li>Obedient boys who anticipate my mood before I have to explain it. 🖤</li>
+          <li>Gifts. Always gifts. 🎁💸</li>
+        </ul>
+      </div>
+      <div class="reveal card" style="text-align:center;padding:2.6rem 1.6rem">
+        <div class="float" style="font-size:3.4rem;line-height:1">👢</div>
+        <h3 class="display" style="font-size:1.1rem;color:var(--gold-soft);margin:1rem 0 .6rem;letter-spacing:.18em">BOOTS ONLY</h3>
+        <p class="serif" style="font-style:italic;font-size:1.15rem;color:var(--muted);margin:0">
+          "You will never touch them.<br>You will never see them in person.<br>And still, you will think about them<br>every single day." 🖤
+        </p>
+        <div class="divider" style="margin:1.6rem 0"><span></span><b>👅</b><span></span></div>
+        <div class="pill">Goddess Brenda · Digital Only</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LEAVE / VOW ================= -->
+<section id="leave">
+  <div class="wrap">
+    <div class="reveal warning" style="text-align:center;max-width:800px;margin:0 auto">
+      <h4>🚪 Your Final Chance To Walk Away</h4>
+      <p style="font-size:1.05rem">
+        If any single rule above felt too strict, too expensive, too controlling or simply not your world —
+        that is completely fine. Close the page, say goodbye nicely, as equals, and we part with respect. 🖤
+        <br><br>
+        But if you stay… you stay as <strong style="color:#fff">mine</strong>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="vow" style="padding-top:2rem">
+  <div class="wrap">
+    <div class="vow-box reveal">
+      <div style="text-align:center;margin-bottom:2rem">
+        <div class="eyebrow">The Final Chapter</div>
+        <h2 class="sec-title gold-text">The Sacred Vow 🙌🖤</h2>
+        <p class="sec-sub" style="margin:0 auto">Tick every rule. Then press submit — the vow will pop up on your screen, big enough to read.</p>
+      </div>
+
+      <div id="checklist" style="max-width:660px;margin:0 auto 2rem">
+        <label class="check priority"><input type="checkbox"><span><strong style="color:var(--gold-soft)">RULE 01 —</strong> I will keep my real life in order. Job, family, duties first. I will never use Mistress Brenda as an excuse to fail the people around me. Grown men manage both. 🌍</span></label>
+        <label class="check"><input type="checkbox"><span>I understand this is <strong>chat only</strong> — no dates, no meetups, no relationship, no boyfriend, never in real life.</span></label>
+        <label class="check"><input type="checkbox"><span>I will give <strong>Mistress Brenda</strong> my full attention, fast replies, good manners and endless patience.</span></label>
+        <label class="check"><input type="checkbox"><span>I will react ❤️ to every message and always use fitting emojis. No dry messages, no 5-message spam.</span></label>
+        <label class="check"><input type="checkbox"><span>No nudes from me. Ever. No feet, no scat, no blood, no branding, no degrading names.</span></label>
+        <label class="check"><input type="checkbox"><span>I will never demand — only request — and I accept all blame, fair or unfair.</span></label>
+        <label class="check"><input type="checkbox"><span>I will be fully transparent about my days, my schedule and my whereabouts. 📍</span></label>
+        <label class="check"><input type="checkbox"><span>I accept that <strong>Goddess Brenda is not free entertainment</strong> — I will spend money and buy gifts for her attention. 💸🎁</span></label>
+      </div>
+
+      <p id="progressText" style="text-align:center;font-size:.8rem;color:var(--muted);margin:0 0 1.4rem">0 / 8 rules accepted 🔒</p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center">
+        <button id="submitBtn" class="btn" disabled>🔒 Locked — Obey First</button>
+        <button class="btn btn-ghost" type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Read The Rules Again</button>
+      </div>
+
+      <div id="unlocked" style="display:none;margin-top:2rem;text-align:center">
+        <div class="warning gold">
+          <h4>✅ Accepted. Here is your vow — read it.</h4>
+          <p>
+            Write this as your <strong style="color:#fff">very first message</strong> to Goddess Brenda.
+            Copy it with the button — or just type it yourself, word for word. Then wait. 😈
+          </p>
+        </div>
+        <div class="vow-line gold-text copybtn" data-copy="MISTRESS BRENDA! YOUR WILL - MY HANDS!!! 🙌🖤" style="margin-top:1.4rem;font-size:clamp(1.15rem,4vw,1.7rem)">
+          MISTRESS BRENDA! YOUR WILL - MY HANDS!!! 🙌🖤
+        </div>
+        <p style="text-align:center;font-size:.85rem;color:#cbbfa8;margin:.8rem 0 1.4rem">Tap the gold text to select it. Then copy — or write it by hand.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center">
+          <button class="btn copybtn" data-copy="MISTRESS BRENDA! YOUR WILL - MY HANDS!!! 🙌🖤">📋 Copy My Vow</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="display gold-text" style="font-size:1rem;letter-spacing:.3em;margin-bottom:.8rem">👑 MISTRESS BRENDA · GODDESS BRENDA 👑</div>
+    <p style="margin:0">Online chat domination only · 18+ · Consensual adult fantasy · No meetups, ever 🖤</p>
+    <p style="margin:.6rem 0 0;opacity:.6">Her will. Your hands. 🙌</p>
+    <div class="stats" id="stats" aria-label="Page counters">
+      <span><i>visits</i> <b id="statVisits">—</b></span>
+      <span aria-hidden="true">·</span>
+      <span><i>vows</i> <b id="statSubmits">—</b></span>
+    </div>
+  </div>
+</footer>
+
+<div id="vowPop" role="dialog" aria-modal="true" aria-labelledby="vowPopTitle">
+  <div class="panel">
+    <div class="eyebrow">Your vow — read it out loud</div>
+    <h3 id="vowPopTitle" class="gold-text" style="font-family:'Cinzel',serif;font-size:clamp(1.3rem,4vw,1.9rem);margin:.3rem 0 0">Write this in the chat</h3>
+    <p class="read-this">
+      This is your <b>first message</b> to Mistress Brenda.<br>
+      Copy it — or type it yourself. Exactly like this.
+    </p>
+    <div class="vow-giant gold-text copybtn" data-copy="MISTRESS BRENDA! YOUR WILL - MY HANDS!!! 🙌🖤">
+      MISTRESS BRENDA!<br>YOUR WILL - MY HANDS!!!<br>🙌🖤
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center">
+      <button class="btn copybtn" data-copy="MISTRESS BRENDA! YOUR WILL - MY HANDS!!! 🙌🖤">📋 Copy The Vow</button>
+      <button class="btn btn-ghost" type="button" id="vowPopClose">I have read it 🖤</button>
+    </div>
+    <p style="margin:1.1rem 0 0;font-size:.88rem;color:#a9a1a6;line-height:1.6">
+      Cannot copy? No problem. Look at the gold text and write it in the chat. Word for word.
+    </p>
+  </div>
+</div>
+
+<div class="toast" id="toast">Copied 🖤</div>
+
+<script>
+const bar = document.getElementById('progress');
+addEventListener('scroll', () => {
+  const h = document.documentElement;
+  bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100 + '%';
+});
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) { setTimeout(() => e.target.classList.add('in'), i * 90); io.unobserve(e.target); }
+  });
+}, { threshold: .12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+const toast = document.getElementById('toast');
+function showToast(msg) {
+  toast.textContent = msg;
+  toast.classList.add('show');
+  clearTimeout(toast._t);
+  toast._t = setTimeout(() => toast.classList.remove('show'), 2200);
+}
+document.querySelectorAll('.copybtn').forEach(el => {
+  el.addEventListener('click', () => {
+    const txt = el.dataset.copy;
+    navigator.clipboard?.writeText(txt).then(
+      () => showToast('Copied · now obey 🖤'),
+      () => showToast('Copy it manually, slave 👢')
+    );
+  });
+});
+
+/* vow gate */
+const boxes = [...document.querySelectorAll('#checklist input')];
+const btn = document.getElementById('submitBtn');
+const msg = document.getElementById('progressText');
+const unlocked = document.getElementById('unlocked');
+
+function evaluate() {
+  const done = boxes.filter(b => b.checked).length;
+  const all = done === boxes.length;
+  if (!all) {
+    msg.textContent = `${done} / ${boxes.length} rules accepted 🔒`;
+    msg.style.color = 'var(--muted)';
+    btn.disabled = true;
+    btn.textContent = '🔒 Locked — Obey First';
+  } else {
+    msg.textContent = 'All rules accepted ✅ — press submit.';
+    msg.style.color = 'var(--gold-soft)';
+    btn.disabled = false;
+    btn.textContent = '👑 Submit My Vow To Mistress Brenda';
+  }
+}
+boxes.forEach(b => b.addEventListener('change', evaluate));
+
+const vowPop = document.getElementById('vowPop');
+function openVowPop() {
+  vowPop.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeVowPop() {
+  vowPop.classList.remove('open');
+  document.body.style.overflow = '';
+  unlocked.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+document.getElementById('vowPopClose').addEventListener('click', closeVowPop);
+
+btn.addEventListener('click', () => {
+  unlocked.style.display = 'block';
+  openVowPop();
+  showToast('Read your vow 👑');
+  rain();
+  bumpSubmit();
+});
+
+/* ---------- discrete visit / submit counters ---------- */
+const COUNT_API = 'https://countapi.mileshilliard.com/api/v1';
+const KEY_VISITS  = 'mistress_brenda_rules_visits_v1';
+const KEY_SUBMITS = 'mistress_brenda_rules_submits_v1';
+const elVisits  = document.getElementById('statVisits');
+const elSubmits = document.getElementById('statSubmits');
+const fmt = n => Number(n || 0).toLocaleString('en-GB');
+
+async function countHit(key) {
+  try {
+    const r = await fetch(`${COUNT_API}/hit/${key}`);
+    const d = await r.json();
+    return Number(d.value) || 0;
+  } catch { return null; }
+}
+async function countGet(key) {
+  try {
+    const r = await fetch(`${COUNT_API}/get/${key}`);
+    const d = await r.json();
+    return Number(d.value) || 0;
+  } catch { return null; }
+}
+
+(async () => {
+  let visits;
+  if (!sessionStorage.getItem('mb_visited')) {
+    visits = await countHit(KEY_VISITS);
+    sessionStorage.setItem('mb_visited', '1');
+  } else {
+    visits = await countGet(KEY_VISITS);
+  }
+  const submits = await countGet(KEY_SUBMITS);
+  if (visits != null) elVisits.textContent = fmt(visits);
+  if (submits != null) elSubmits.textContent = fmt(submits);
+})();
+
+let submitCounted = false;
+async function bumpSubmit() {
+  if (submitCounted) return;
+  submitCounted = true;
+  const n = await countHit(KEY_SUBMITS);
+  if (n != null) elSubmits.textContent = fmt(n);
+}
+
+function rain() {
+  const chars = ['🖤', '👑', '👢', '🙌', '✨', '💸'];
+  for (let i = 0; i < 34; i++) {
+    const s = document.createElement('div');
+    s.textContent = chars[Math.floor(Math.random() * chars.length)];
+    s.style.cssText = `position:fixed;z-index:90;pointer-events:none;left:${Math.random()*100}vw;top:-60px;font-size:${14+Math.random()*24}px;opacity:.9;transition:transform ${2.2+Math.random()*2}s linear, opacity ${2.2+Math.random()*2}s linear;`;
+    document.body.appendChild(s);
+    requestAnimationFrame(() => {
+      s.style.transform = `translateY(${innerHeight + 140}px) rotate(${Math.random()*720-360}deg)`;
+      s.style.opacity = '0';
+    });
+    setTimeout(() => s.remove(), 5000);
+  }
+}
+
+evaluate();
+</script>
+</body>
+</html>
